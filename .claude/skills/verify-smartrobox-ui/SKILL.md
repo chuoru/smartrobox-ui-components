@@ -65,6 +65,18 @@ Viewport defaults to 1280x900. Change it with `--width N --height N`.
 
 It extracts each ``Run `drive.sh …` `` bullet from `features/*.md` and runs it verbatim, printing PASS/FAIL per journey with the failing log line. Use it after any change to a shared token or base component. A full run takes about 30 seconds.
 
+### Accessibility scan
+
+```bash
+.claude/skills/verify-smartrobox-ui/scripts/axe.sh                                   # every page + every overlay in axe-overlays.txt
+.claude/skills/verify-smartrobox-ui/scripts/axe.sh /samples/tabs                     # one page
+.claude/skills/verify-smartrobox-ui/scripts/axe.sh '/samples/popover@aria/Dimensions[role="button"]'   # open an overlay first
+```
+
+Runs axe-core (WCAG 2.1 A and AA) on each path in light and dark mode, and exits non-zero on any violation. `path@selector` clicks the selector before scanning, `@hover:selector` hovers it, and `@context:selector` right-clicks it. Each run writes every finding to `axe.json` in the evidence dir. A full run takes about 3.5 minutes. CI runs the full scan on every PR.
+
+axe only sees what is rendered. A new popup, menu or dialog needs a line in `scripts/axe-overlays.txt`, or its open state is never checked. axe also skips non-text contrast (control borders, checked fills) and placeholder text, so measure those with `expect-style`.
+
 ## Evidence
 
 Everything lands in `.verify-evidence/<run-id>/` at the repo root (git-ignored). That covers screenshots, ARIA snapshots, `log.jsonl` (one JSON line per step with the values read), and `failure-<ts>.png` on any failed step. Report the run id and these paths.

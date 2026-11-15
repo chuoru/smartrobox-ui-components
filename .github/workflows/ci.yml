@@ -73,6 +73,9 @@ jobs:
         run: .claude/skills/verify-smartrobox-ui/scripts/launch.sh
       - name: Run playground journeys
         run: .claude/skills/verify-smartrobox-ui/scripts/run-map.sh
+      - name: Run axe on every playground page and overlay
+        if: success() || failure()
+        run: .claude/skills/verify-smartrobox-ui/scripts/axe.sh
       - name: Stop playground
         if: always()
         run: .claude/skills/verify-smartrobox-ui/scripts/cleanup.sh
