@@ -66,7 +66,7 @@ withDefaults(
     height: 1.125rem;
     cursor: default;
     border-radius: 9999px;
-    border: 1px solid var(--sr-color-border);
+    border: 1px solid var(--sr-color-control-border);
     background-color: var(--sr-color-bg);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
