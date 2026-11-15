@@ -2,19 +2,13 @@ import { INITIAL_VIEWPORTS } from 'storybook/viewport';
 import type { Preview, Decorator } from '@storybook/vue3-vite';
 import '../src/style.css';
 
-const applyBackgroundClass: Decorator = (story) => {
-  if (document.body.classList.contains('dark')) {
-    document.body.classList.add('light');
-    document.body.classList.remove('dark');
-  } else {
-    document.body.classList.add('dark');
-    document.body.classList.remove('light');
-  }
+const applyThemeClass: Decorator = (story, context) => {
+  document.body.classList.toggle('dark', context.globals.backgrounds?.value === 'dark');
   return story();
 };
 
 const preview: Preview = {
-  decorators: [applyBackgroundClass],
+  decorators: [applyThemeClass],
   parameters: {
     viewport: {
       options: INITIAL_VIEWPORTS,
@@ -27,7 +21,7 @@ const preview: Preview = {
         },
         dark: {
           name: 'dark',
-          value: 'oklch(12.9% 0.042 264.695)',
+          value: '#172b4d',
         },
       },
     },
