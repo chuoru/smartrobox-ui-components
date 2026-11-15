@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - name: Build library (token check, type-check, bundle)
+        run: npm run build
+      - name: Build playground (type-check every sample)
+        run: npm run build -w playground
+
+  storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Build Storybook
+        working-directory: playground
+        run: npx storybook build -o storybook-static --quiet
+      - name: Run Storybook tests
+        working-directory: playground
+        run: |
+          python3 -m http.server 6006 --bind 127.0.0.1 --directory storybook-static &
+          timeout 30 bash -c 'until curl -sf http://127.0.0.1:6006 > /dev/null; do sleep 0.5; done'
+          npx test-storybook --url http://127.0.0.1:6006
+
+  journeys:
+    runs-on: ubuntu-latest
+    env:
+      VERIFY_RUN_ID: ci
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - name: Launch playground
+        run: .claude/skills/verify-smartrobox-ui/scripts/launch.sh
+      - name: Run playground journeys
+        run: .claude/skills/verify-smartrobox-ui/scripts/run-map.sh
+      - name: Stop playground
+        if: always()
+        run: .claude/skills/verify-smartrobox-ui/scripts/cleanup.sh
+      - name: Upload journey evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: journey-evidence
+          path: .verify-evidence/ci/
+          if-no-files-found: ignore
