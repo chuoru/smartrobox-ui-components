@@ -13,7 +13,7 @@ This directory is the maintained source for verifying the user-visible behavior 
 
 - Every journey below is a single `drive.sh` call. Paths are relative to the repo root. Prefix commands with `.claude/skills/verify-smartrobox-ui/scripts/`.
 - Use ARIA handles `aria/<name>[role="<role>"]`. Names come from visible labels, `aria-label`, or button text as rendered. Chrome applies CSS `text-transform`, so an uppercased `Cancel` button is named `CANCEL`.
-- Brand primary is `rgb(120, 190, 65)` (`--sr-primary-500`). Light page background token `--sr-color-bg` is `white`, and dark is `#172b4d`.
+- Brand primary is `rgb(120, 190, 65)` (`--sr-primary-500`), used by checkboxes, switches and radios. Buttons use darker AA shades, see [Buttons](./buttons.md). Light page background token `--sr-color-bg` is `white`, and dark is `#172b4d`.
 
 ## Proof and skip reporting
 

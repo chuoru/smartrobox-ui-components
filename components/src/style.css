@@ -79,20 +79,27 @@
   --sr-btn-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   --sr-btn-shadow-hover: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
+  /* Fills and outline colors are shifted from the brand colors where needed so button text meets WCAG AA (4.5:1). */
   --sr-btn-default-text: var(--sr-gray-800);
   --sr-btn-default-bg: white;
   --sr-btn-primary-text: white;
-  --sr-btn-primary-bg: var(--sr-primary-500);
+  --sr-btn-primary-bg: var(--sr-primary-700);
+  --sr-btn-primary-outline: var(--sr-primary-700);
   --sr-btn-secondary-text: white;
   --sr-btn-secondary-bg: var(--sr-secondary-500);
+  --sr-btn-secondary-outline: var(--sr-secondary-500);
   --sr-btn-success-text: white;
-  --sr-btn-success-bg: var(--sr-success-500);
+  --sr-btn-success-bg: #1d8659;
+  --sr-btn-success-outline: #1d8659;
   --sr-btn-info-text: white;
-  --sr-btn-info-bg: var(--sr-info-500);
+  --sr-btn-info-bg: #0b8197;
+  --sr-btn-info-outline: #0b8197;
   --sr-btn-warning-text: var(--sr-gray-900);
   --sr-btn-warning-bg: var(--sr-warning-500);
+  --sr-btn-warning-outline: #8e7322;
   --sr-btn-danger-text: white;
-  --sr-btn-danger-bg: var(--sr-danger-500);
+  --sr-btn-danger-bg: var(--sr-danger-600);
+  --sr-btn-danger-outline: var(--sr-danger-600);
 
   --sr-cmbbx-label-color: var(--sr-primary-700);
   --sr-color-text: var(--sr-gray-700);
@@ -137,6 +144,12 @@
     --sr-color-btn-border: var(--sr-gray-700);
     --sr-btn-default-text: var(--sr-gray-100);
     --sr-btn-default-bg: var(--sr-navy-500);
+    --sr-btn-primary-outline: var(--sr-primary-500);
+    --sr-btn-secondary-outline: #df7088;
+    --sr-btn-success-outline: var(--sr-success-500);
+    --sr-btn-info-outline: var(--sr-info-500);
+    --sr-btn-warning-outline: var(--sr-warning-500);
+    --sr-btn-danger-outline: #f75c7b;
 
     --sr-color-switch-thumb: var(--sr-gray-100);
     --sr-color-unchecked-switch-bg: var(--sr-gray-600);

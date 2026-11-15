@@ -72,32 +72,38 @@ withDefaults(
   &.primary {
     --btn-text: var(--sr-btn-primary-text);
     --btn-bg: var(--sr-btn-primary-bg);
+    --btn-outline: var(--sr-btn-primary-outline);
   }
   &.secondary {
     --btn-text: var(--sr-btn-secondary-text);
     --btn-bg: var(--sr-btn-secondary-bg);
+    --btn-outline: var(--sr-btn-secondary-outline);
   }
   &.success {
     --btn-text: var(--sr-btn-success-text);
     --btn-bg: var(--sr-btn-success-bg);
+    --btn-outline: var(--sr-btn-success-outline);
   }
   &.info {
     --btn-text: var(--sr-btn-info-text);
     --btn-bg: var(--sr-btn-info-bg);
+    --btn-outline: var(--sr-btn-info-outline);
   }
   &.warning {
     --btn-text: var(--sr-btn-warning-text);
     --btn-bg: var(--sr-btn-warning-bg);
+    --btn-outline: var(--sr-btn-warning-outline);
   }
   &.danger {
     --btn-text: var(--sr-btn-danger-text);
     --btn-bg: var(--sr-btn-danger-bg);
+    --btn-outline: var(--sr-btn-danger-outline);
   }
 
   &.outline {
-    color: var(--btn-bg);
+    color: var(--btn-outline);
     background-color: transparent;
-    border-color: var(--btn-bg);
+    border-color: var(--btn-outline);
     box-shadow: none;
     &:hover {
       color: var(--btn-text);
