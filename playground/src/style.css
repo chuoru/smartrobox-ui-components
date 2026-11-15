@@ -1,0 +1,11 @@
+@import "tailwindcss" prefix(tw);
+
+@source "./src/*.vue";
+@source "../../components/*.vue";
+@source "../../components/**/*.{vue,ts}";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: NotoSansJPRegular, 'Noto Sans JP', sans-serif;
+}

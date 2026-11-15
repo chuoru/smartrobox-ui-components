@@ -1,0 +1,21 @@
+<template>
+  <div class="dropdown-menu-item-suffix">
+    <slot />
+  </div>
+</template>
+
+<style scoped>
+.dropdown-menu-item-suffix {
+  left: 1.25rem;
+  margin-left: auto;
+  color: var(--sr-gray-400);
+
+  :where([data-disabled]) & {
+    color: var(--sr-gray-300);
+  }
+
+  :where([data-highlighted]) & {
+    color: white;
+  }
+}
+</style>

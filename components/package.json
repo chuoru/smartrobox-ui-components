@@ -1,0 +1,38 @@
+{
+  "name": "@smartrobox/ui-components",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/index.es.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "tsc": "vue-tsc --noEmit",
+    "check-tokens": "node scripts/check-tokens.mjs",
+    "build": "node scripts/check-tokens.mjs && vue-tsc --noEmit && vite build"
+  },
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "dayjs": "^1.11.21",
+    "ip-address": "^10.2.0",
+    "motion-v": "^2.0.0",
+    "reka-ui": "^2.9.1",
+    "sweetalert2": "^11.26.22",
+    "vue-loading-overlay": "^6.0.6"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.30"
+  }
+}

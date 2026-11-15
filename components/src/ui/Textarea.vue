@@ -1,0 +1,25 @@
+<script setup lang="ts">
+const model = defineModel<string | undefined>();
+</script>
+
+<template>
+  <textarea
+    v-model="model"
+    class="root"
+  />
+</template>
+
+<style scoped>
+.root {
+  border: 1px solid var(--sr-color-border);
+  border-radius: var(--sr-form-control-border-radius);
+  transition: all 0.15s ease-in-out;
+  padding: var(--sr-form-control-py-sm) calc(var(--sr-form-control-font-sm) / 2);
+
+  &:focus {
+    outline: none;
+    border-color: var(--sr-primary-500);
+    box-shadow: 3px 4px 8px rgb(120 190 65 / 10%);
+  }
+}
+</style>
