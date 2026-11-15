@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue';
 import { expect, within } from 'storybook/test';
 import { Input } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type InputArgs = InstanceType<typeof Input>['$props'];
 type Story = StoryObj<InputArgs>;

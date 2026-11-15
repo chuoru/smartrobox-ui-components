@@ -1,6 +1,6 @@
 import { ref, watch } from 'vue';
 import { Slider } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type SliderArgs = InstanceType<typeof Slider>['$props'];
 type Story = StoryObj<SliderArgs>;

@@ -1,6 +1,6 @@
 import { ref, watch } from 'vue';
 import { Editable } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type EditableArgs = InstanceType<typeof Editable>['$props'];
 type Story = StoryObj<EditableArgs>;

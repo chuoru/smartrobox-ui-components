@@ -1,6 +1,6 @@
 import { ref, watch } from 'vue';
 import { SelectGrouped } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type SelectorArgs = InstanceType<typeof SelectGrouped>['$props'];
 type Story = StoryObj<SelectorArgs>;

@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue';
 import { expect, within } from 'storybook/test';
 import { RadioGroup } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type RadioGroupArgs = InstanceType<typeof RadioGroup>['$props'];
 type Story = StoryObj<RadioGroupArgs>;

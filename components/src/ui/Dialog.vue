@@ -98,7 +98,9 @@ const translateY = computed(() => (props.top === undefined ? '-50%' : '0%'));
   border-radius: var(--sr-radius-lg);
   color: var(--sr-color-text);
   background-color: var(--sr-color-bg-dlg);
-  box-shadow: 0 15px 35px rgb(50 50 93 / 20%), 0 5px 15px rgb(0 0 0 / 17%);
+  box-shadow:
+    0 15px 35px rgb(50 50 93 / 20%),
+    0 5px 15px rgb(0 0 0 / 17%);
 
   .title {
     color: var(--sr-color-heading);

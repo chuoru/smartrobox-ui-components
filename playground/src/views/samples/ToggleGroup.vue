@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { Bars3BottomLeftIcon, Bars3BottomRightIcon, Bars3Icon, BoldIcon, ItalicIcon, StrikethroughIcon } from '@heroicons/vue/24/solid';
+import {
+  Bars3BottomLeftIcon,
+  Bars3BottomRightIcon,
+  Bars3Icon,
+  BoldIcon,
+  ItalicIcon,
+  StrikethroughIcon,
+} from '@heroicons/vue/24/solid';
 
 import { ToggleGroup } from '@smartrobox/ui';
 

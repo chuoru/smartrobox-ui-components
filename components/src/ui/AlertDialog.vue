@@ -145,7 +145,9 @@ const emit = defineEmits<{
   color: var(--sr-color-text);
   border-radius: var(--sr-radius-lg);
   background-color: var(--sr-color-bg-dlg);
-  box-shadow: 0 15px 35px rgb(50 50 93 / 20%), 0 5px 15px rgb(0 0 0 / 17%);
+  box-shadow:
+    0 15px 35px rgb(50 50 93 / 20%),
+    0 5px 15px rgb(0 0 0 / 17%);
 
   .close {
     position: absolute;

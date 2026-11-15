@@ -1,5 +1,5 @@
 import { Splitter } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type Story = StoryObj;
 
@@ -7,7 +7,11 @@ const meta: Meta = {
   title: 'Splitter',
   component: Splitter.Group,
   render: () => ({
-    components: { SplitterGroup: Splitter.Group, SplitterPanel: Splitter.Panel, SplitterResizeHandle: Splitter.ResizeHandle },
+    components: {
+      SplitterGroup: Splitter.Group,
+      SplitterPanel: Splitter.Panel,
+      SplitterResizeHandle: Splitter.ResizeHandle,
+    },
     template: `
       <div style="height: 16rem; width: 100%;">
         <SplitterGroup id="story-splitter" direction="horizontal">

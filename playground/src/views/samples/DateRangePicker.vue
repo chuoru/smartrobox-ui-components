@@ -8,7 +8,7 @@ const dateRange2 = ref<DateRange>();
 </script>
 
 <template>
-  <div class="tw:flex tw:flex-col tw:gap-1 tw:w-68">
+  <div class="tw:flex tw:w-68 tw:flex-col tw:gap-1">
     <Label for="date-range-ja">ja locale</Label>
     <DateRangePicker
       v-model="dateRange"
@@ -18,7 +18,7 @@ const dateRange2 = ref<DateRange>();
     <span class="tw:text-green-600">{{ dateRange }}</span>
   </div>
 
-  <div class="tw:mt-4 tw:flex tw:flex-col tw:gap-1 tw:w-68">
+  <div class="tw:mt-4 tw:flex tw:w-68 tw:flex-col tw:gap-1">
     <Label for="date-range-en">en locale</Label>
     <DateRangePicker
       v-model="dateRange2"
