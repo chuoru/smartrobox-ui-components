@@ -75,7 +75,15 @@ It extracts each ``Run `drive.sh …` `` bullet from `features/*.md` and runs it
 
 Runs axe-core (WCAG 2.1 A and AA) on each path in light and dark mode, and exits non-zero on any violation. `path@selector` clicks the selector before scanning, `@hover:selector` hovers it, and `@context:selector` right-clicks it. Each run writes every finding to `axe.json` in the evidence dir. A full run takes about 3.5 minutes. CI runs the full scan on every PR.
 
-axe only sees what is rendered. A new popup, menu or dialog needs a line in `scripts/axe-overlays.txt`, or its open state is never checked. axe also skips non-text contrast (control borders, checked fills) and placeholder text, so measure those with `expect-style`.
+axe only sees what is rendered. A new popup, menu or dialog needs a line in `scripts/axe-overlays.txt`, or its open state is never checked. axe also skips non-text contrast and placeholder text.
+
+### Non-text contrast
+
+```bash
+.claude/skills/verify-smartrobox-ui/scripts/nontext.sh
+```
+
+Measures WCAG 1.4.11 (3:1) for form-control outlines, switch tracks and thumbs, pressed toggles and keyboard focus rings, in light and dark mode, against the library's `--sr-color-bg`. The checks are the `CHECKS` table in `scripts/nontext.mjs`. Add a row when a new control draws its own outline or focus ring. CI runs it on every PR. Interactive outlines use `--sr-color-control-border` and focus uses `--sr-outline-color`; decorative lines keep `--sr-color-border`, which has no contrast requirement.
 
 ## Evidence
 
