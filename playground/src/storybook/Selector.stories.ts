@@ -10,7 +10,7 @@ const meta: Meta<SelectorArgs> = {
   component: SelectGrouped,
   render: (args: SelectorArgs) => ({
     components: { SelectGrouped },
-    template: `<SelectGrouped v-bind="args" />`,
+    template: `<SelectGrouped v-bind="args" aria-label="Fruit" />`,
     setup() {
       const value = ref(args.modelValue ?? undefined);
       watch(

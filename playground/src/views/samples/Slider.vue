@@ -11,6 +11,7 @@ const values = ref([20, 80]);
     <div>
       <Slider
         v-model="value"
+        label="Volume"
         :max="100"
         :step="1"
         class="tw:w-48"
@@ -21,6 +22,7 @@ const values = ref([20, 80]);
     <div>
       <SliderRange
         v-model="values"
+        :labels="['Minimum', 'Maximum']"
         :max="100"
         :step="1"
         class="tw:w-48"

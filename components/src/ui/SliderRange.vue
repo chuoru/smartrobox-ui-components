@@ -1,14 +1,34 @@
 <script setup lang="ts">
 import { Slider } from 'reka-ui/namespaced';
+
+withDefaults(
+  defineProps<{
+    labels: [min: string, max: string];
+    min?: number;
+    max?: number;
+  }>(),
+  { min: 0, max: 100 },
+);
 </script>
 
 <template>
-  <Slider.Root class="slider-root">
+  <Slider.Root
+    class="slider-root"
+    :min="min"
+    :max="max"
+    :default-value="[min, max]"
+  >
     <Slider.Track class="slider-track">
       <Slider.Range class="slider-range" />
     </Slider.Track>
-    <Slider.Thumb class="slider-thumb slider-thumb--first" />
-    <Slider.Thumb class="slider-thumb slider-thumb--second" />
+    <Slider.Thumb
+      class="slider-thumb slider-thumb--first"
+      :aria-label="labels[0]"
+    />
+    <Slider.Thumb
+      class="slider-thumb slider-thumb--second"
+      :aria-label="labels[1]"
+    />
   </Slider.Root>
 </template>
 

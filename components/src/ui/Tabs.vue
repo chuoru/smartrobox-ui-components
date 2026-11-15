@@ -67,7 +67,7 @@ const model = defineModel<string | number>();
       .indicator-bar {
         height: 100%;
         width: 100%;
-        background-color: var(--sr-success-600);
+        background-color: var(--sr-color-success);
       }
     }
     .trigger {
@@ -86,7 +86,7 @@ const model = defineModel<string | number>();
         opacity: 0.75;
       }
       &[data-state='active'] {
-        color: var(--sr-success-600);
+        color: var(--sr-color-success);
       }
     }
   }

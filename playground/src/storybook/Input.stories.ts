@@ -11,7 +11,7 @@ const meta: Meta<InputArgs> = {
   component: Input,
   render: (args: InputArgs) => ({
     components: { Input },
-    template: `<Input v-bind="args" />`,
+    template: `<Input v-bind="args" aria-label="Name" />`,
     setup() {
       const value = ref(args.modelValue ?? '');
       watch(

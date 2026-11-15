@@ -8,7 +8,7 @@ const meta: Meta = {
   component: SliderRange,
   render: () => ({
     components: { SliderRange },
-    template: `<div style="width: 12rem;"><SliderRange /></div>`,
+    template: `<div style="width: 12rem;"><SliderRange :labels="['Minimum', 'Maximum']" /></div>`,
     setup() {
       return {};
     },

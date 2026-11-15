@@ -2,11 +2,13 @@
 import { MinusIcon, CheckIcon } from '@heroicons/vue/24/solid';
 import { Checkbox } from 'reka-ui/namespaced';
 import type { CheckboxRootProps, CheckboxCheckedState } from 'reka-ui';
+import { useId } from 'vue';
 
 withDefaults(defineProps<CheckboxRootProps & { label?: string; value?: string; size?: 'xs' | 'sm' | 'md' }>(), {
   size: 'md',
 });
 const model = defineModel<CheckboxCheckedState>();
+const labelId = useId();
 </script>
 
 <template>
@@ -17,6 +19,7 @@ const model = defineModel<CheckboxCheckedState>();
       :class="size"
       :value="value"
       :disabled="disabled"
+      :aria-labelledby="label ? labelId : undefined"
     >
       <Checkbox.Indicator
         class="indicator"
@@ -32,7 +35,7 @@ const model = defineModel<CheckboxCheckedState>();
         />
       </Checkbox.Indicator>
     </Checkbox.Root>
-    <span>{{ label }}</span>
+    <span :id="labelId">{{ label }}</span>
   </label>
 </template>
 
@@ -91,11 +94,11 @@ label {
   }
   &[data-state='checked'],
   &[data-state='indeterminate'] {
-    border-color: var(--sr-primary-500);
-    background-color: var(--sr-primary-500);
+    border-color: var(--sr-color-control-checked);
+    background-color: var(--sr-color-control-checked);
     .icon {
-      color: white;
-      stroke: white;
+      color: var(--sr-color-control-checked-fg);
+      stroke: var(--sr-color-control-checked-fg);
     }
   }
   &:focus-visible {

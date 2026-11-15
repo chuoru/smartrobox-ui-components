@@ -219,7 +219,7 @@ const model = defineModel<DateValue | null>();
           width: 2rem;
           border-radius: 0.25rem;
           font-size: 0.75rem;
-          color: var(--sr-success-600);
+          color: var(--sr-color-success);
         }
       }
 
@@ -259,7 +259,7 @@ const model = defineModel<DateValue | null>();
             color: var(--sr-gray-400);
           }
           &[data-selected] {
-            background-color: var(--sr-success-600);
+            background-color: var(--sr-color-success);
             color: white;
           }
           &[data-today] {

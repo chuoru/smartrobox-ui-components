@@ -95,9 +95,6 @@ defineExpose({
     padding-left: 1rem;
     padding-right: 1rem;
 
-    &[data-disabled] .stepper-info {
-      opacity: 0.5;
-    }
     .stepper-trigger {
       display: inline-flex;
       height: 2.5rem;
@@ -142,24 +139,7 @@ defineExpose({
     &[data-state='inactive'] {
       .stepper-trigger,
       .stepper-info {
-        opacity: 0.65;
-        &.is-not-clickable {
-          &:hover {
-            opacity: 0.65 !important;
-          }
-        }
-      }
-    }
-    &[data-state='active'] + &[data-state='inactive'] {
-      .stepper-trigger {
-        &:hover {
-          opacity: 1;
-        }
-        &.is-not-clickable {
-          &:hover {
-            opacity: 0.65;
-          }
-        }
+        color: var(--sr-color-text-light);
       }
     }
     &[data-disabled] .stepper-trigger {
