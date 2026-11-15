@@ -1,6 +1,14 @@
 {
-  "name": "@smartrobox/ui-components",
+  "name": "@chuoru/smartrobox-ui-components",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuoru/smartrobox-ui-components.git",
+    "directory": "components"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "main": "dist/index.es.js",
   "module": "dist/index.es.js",
