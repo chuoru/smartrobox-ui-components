@@ -15,6 +15,7 @@ const meta: Meta<ButtonArgs> = {
     },
   }),
   tags: ['autodocs'],
+  parameters: { a11y: { test: 'error' } },
   args: {
     variant: 'default',
     size: 'md',
@@ -60,6 +61,48 @@ export const Danger: Story = {
 
 export const None: Story = {
   args: { variant: 'none' },
+};
+
+export const Success: Story = {
+  args: { variant: 'success' },
+};
+
+export const Info: Story = {
+  args: { variant: 'info' },
+};
+
+export const Warning: Story = {
+  args: { variant: 'warning' },
+};
+
+export const Link: Story = {
+  args: { variant: 'link' },
+};
+
+const ALL_VARIANTS = ['default', 'primary', 'secondary', 'success', 'info', 'warning', 'danger', 'link'] as const;
+const OUTLINE_VARIANTS = ['primary', 'secondary', 'success', 'info', 'warning', 'danger'] as const;
+
+const allVariants: Story = {
+  render: () => ({
+    components: { Button },
+    setup: () => ({ ALL_VARIANTS, OUTLINE_VARIANTS }),
+    template: `
+      <div style="display: grid; gap: 1rem">
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+          <Button v-for="v in ALL_VARIANTS" :key="v" :variant="v">{{ v }}</Button>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+          <Button v-for="v in OUTLINE_VARIANTS" :key="v" :variant="v" outline>{{ v }} outline</Button>
+        </div>
+      </div>`,
+  }),
+};
+
+export const AllVariants: Story = allVariants;
+
+export const AllVariantsDark: Story = {
+  ...allVariants,
+  globals: { backgrounds: { value: 'dark' } },
 };
 
 export default meta;
