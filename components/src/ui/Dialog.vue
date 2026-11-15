@@ -34,7 +34,7 @@ const translateY = computed(() => (props.top === undefined ? '-50%' : '0%'));
           <Motion
             :initial="{ opacity: 0 }"
             :animate="{ opacity: 1 }"
-            :exit="{ opacity: 0 }"
+            :exit="{ opacity: 0, pointerEvents: 'none' }"
           />
         </Dialog.Overlay>
         <Dialog.Content

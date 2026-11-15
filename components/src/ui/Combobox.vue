@@ -39,7 +39,7 @@ defineProps<
         <Motion
           :initial="{ transform: 'translateY(-40px)', opacity: 0 }"
           :animate="{ transform: 'translateY(0)', opacity: 1 }"
-          :exit="{ transform: 'translateY(-40px)', opacity: 0 }"
+          :exit="{ transform: 'translateY(-40px)', opacity: 0, pointerEvents: 'none' }"
           class="content"
         >
           <Combobox.Viewport class="viewport">
