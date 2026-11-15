@@ -10,7 +10,7 @@ const meta: Meta<SelectArgs> = {
   component: Select,
   render: (args: SelectArgs) => ({
     components: { Select },
-    template: `<Select v-bind="args" />`,
+    template: `<Select v-bind="args" aria-label="Fruit" />`,
     setup() {
       const checked = ref(args.modelValue ?? false);
       watch(

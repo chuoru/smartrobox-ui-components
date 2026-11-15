@@ -4,6 +4,7 @@ import { Slider } from 'reka-ui/namespaced';
 
 const props = defineProps<{
   modelValue: number;
+  label: string;
 }>();
 
 const emit = defineEmits<{
@@ -26,7 +27,10 @@ const model = computed({
     <Slider.Track class="track">
       <Slider.Range class="range" />
     </Slider.Track>
-    <Slider.Thumb class="thumb" />
+    <Slider.Thumb
+      class="thumb"
+      :aria-label="label"
+    />
   </Slider.Root>
 </template>
 
@@ -50,7 +54,7 @@ const model = computed({
       position: absolute;
       height: 100%;
       border-radius: 9999px;
-      background-color: var(--sr-success-600);
+      background-color: var(--sr-color-success);
     }
   }
   .thumb {

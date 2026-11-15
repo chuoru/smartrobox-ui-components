@@ -104,7 +104,8 @@
   --sr-cmbbx-label-color: var(--sr-primary-700);
   --sr-color-text: var(--sr-gray-700);
   --sr-color-heading: var(--sr-gray-800);
-  --sr-color-text-light: var(--sr-gray-600);
+  --sr-color-text-light: #6a7785;
+  --sr-color-success: #1d8659;
   --sr-color-text-pagination-selected: white;
 
   --sr-color-link: var(--sr-primary-700);
@@ -119,7 +120,8 @@
   --sr-color-bg-tooltip: rgb(23 43 77 / 90%);
   --sr-color-text-tooltip: white;
 
-  --sr-color-checked-switch-bg: var(--sr-primary-500);
+  --sr-color-control-checked: var(--sr-primary-600);
+  --sr-color-control-checked-fg: white;
   --sr-color-switch-thumb: white;
   --sr-color-unchecked-switch-bg: var(--sr-gray-400);
   --sr-color-placeholder: var(--sr-gray-500);
@@ -152,6 +154,9 @@
     --sr-btn-danger-outline: #f75c7b;
 
     --sr-color-switch-thumb: var(--sr-gray-100);
+    --sr-color-success: var(--sr-success-500);
+    --sr-color-control-checked: var(--sr-primary-500);
+    --sr-color-control-checked-fg: var(--sr-gray-950);
     --sr-color-unchecked-switch-bg: var(--sr-gray-600);
     --sr-color-disabled-form-bg: var(--sr-gray-800);
 

@@ -25,6 +25,7 @@ const meta: Meta<SliderArgs> = {
   tags: ['autodocs'],
   args: {
     modelValue: 50,
+    label: 'Volume',
   },
   argTypes: {
     modelValue: {

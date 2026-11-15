@@ -29,7 +29,7 @@ const model = defineModel<number>({ default: 0 });
     width: 100%;
     overflow: hidden;
     border-radius: 9999px;
-    background-color: var(--sr-success-600);
+    background-color: var(--sr-color-success);
     transition: transform 660ms cubic-bezier(0.65, 0, 0.35, 1);
 
     &::after {

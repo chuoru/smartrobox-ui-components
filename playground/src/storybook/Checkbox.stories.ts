@@ -27,6 +27,7 @@ const meta: Meta<CheckboxArgs> = {
   args: {
     modelValue: false,
     disabled: false,
+    label: 'Accept terms',
   },
   argTypes: {
     modelValue: {

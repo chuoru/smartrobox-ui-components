@@ -73,7 +73,7 @@ Proof standards:
 
 - Drive the user path: click the real trigger, type in the real field, use the header theme switch. Don't set Vue state or toggle classes when a control exists.
 - Capture the action and the resulting state: a `shot` before and after, plus an `expect-*` assertion on the result. A screenshot alone is not a proof.
-- Assert colors with `expect-style` against the theme values (brand primary `rgb(120, 190, 65)`, primary buttons `rgb(82, 129, 44)`), not by eyeballing.
+- Assert colors with `expect-style` against the theme values (primary buttons `rgb(82, 129, 44)`, checked controls `rgb(101, 160, 55)`), not by eyeballing.
 - When a change touches a shared token or a base component (`Button`, `Dialog`, `style.css`), drive every feature in `features/` that uses it, not just the one you changed.
 - The playground has no backend. The only side effect is the persisted theme in localStorage, covered by the `theme` feature.
 

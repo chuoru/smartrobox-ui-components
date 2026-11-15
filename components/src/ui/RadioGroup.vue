@@ -87,7 +87,7 @@ withDefaults(
       outline: var(--sr-outline-width) solid var(--sr-outline-color);
     }
     &[data-state='checked'] {
-      border-color: var(--sr-primary-500);
+      border-color: var(--sr-color-control-checked);
     }
     .indicator {
       display: flex;
@@ -100,7 +100,7 @@ withDefaults(
         width: 0.5rem;
         height: 0.5rem;
         border-radius: 9999px;
-        background-color: var(--sr-primary-500);
+        background-color: var(--sr-color-control-checked);
       }
     }
   }

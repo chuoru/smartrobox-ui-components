@@ -50,7 +50,7 @@ withDefaults(
     outline: var(--sr-outline-width) solid var(--sr-outline-color);
   }
   &[data-state='checked'] {
-    background-color: var(--sr-color-checked-switch-bg);
+    background-color: var(--sr-color-control-checked);
   }
   &[data-state='unchecked'] {
     background-color: var(--sr-color-unchecked-switch-bg);
@@ -79,6 +79,8 @@ withDefaults(
     }
     &[data-state='checked'] {
       transform: translateX(100%);
+      border-color: var(--sr-color-control-checked-fg);
+      background-color: var(--sr-color-control-checked-fg);
     }
   }
 }
