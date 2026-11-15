@@ -10,6 +10,7 @@ const applyThemeClass: Decorator = (story, context) => {
 const preview: Preview = {
   decorators: [applyThemeClass],
   parameters: {
+    a11y: { test: 'error' },
     viewport: {
       options: INITIAL_VIEWPORTS,
     },
