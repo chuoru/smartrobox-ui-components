@@ -8,7 +8,7 @@ CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/verify-smartrobox-ui"
 RUN_ID="${VERIFY_RUN_ID:-default}"
 RUN_DIR="/tmp/verify-smartrobox-ui/$RUN_ID"
 STATE_FILE="$RUN_DIR/state"
-EVIDENCE_DIR="${VERIFY_EVIDENCE_DIR:-$REPO_DIR/.verify-evidence/$RUN_ID}"
+EVIDENCE_DIR="$REPO_DIR/.verify-evidence/$RUN_ID"
 CHROME="${VERIFY_CHROME:-/usr/bin/google-chrome}"
 NODE_MAJOR=24
 export VERIFY_RUN_ID="$RUN_ID" VERIFY_EVIDENCE_DIR="$EVIDENCE_DIR" VERIFY_CHROME="$CHROME"
