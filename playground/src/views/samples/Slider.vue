@@ -16,7 +16,7 @@ const values = ref([20, 80]);
         :step="1"
         class="tw:w-48"
       />
-      <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
     </div>
 
     <div>
@@ -27,7 +27,7 @@ const values = ref([20, 80]);
         :step="1"
         class="tw:w-48"
       />
-      <span class="tw:text-green-600">{{ values }} ({{ typeof values }})</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ values }} ({{ typeof values }})</span>
     </div>
   </div>
 </template>

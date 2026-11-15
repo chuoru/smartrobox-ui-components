@@ -1,10 +1,10 @@
 import {
-  DropdownMenuRoot as Root,
   DropdownMenuTrigger as Trigger,
   DropdownMenuPortal as Portal,
   DropdownMenuSub as Sub,
   DropdownMenuRadioGroup as RadioGroup,
 } from 'reka-ui';
+import Root from './Root.vue';
 import Content from './Content.vue';
 import Item from './Item.vue';
 import ItemSuffix from './ItemSuffix.vue';

@@ -12,7 +12,7 @@ const zone = ref('Asia/Tokyo');
   <div class="tw:flex tw:w-40 tw:flex-col tw:gap-1">
     <Label
       for="date"
-      class="tw:text-green-600"
+      class="tw:text-green-700 tw:dark:text-green-400"
     >
       {{ date }}
     </Label>
@@ -26,7 +26,10 @@ const zone = ref('Asia/Tokyo');
           locale="ja"
         />
       </div>
-      <SelectTimeZone v-model="zone" />
+      <SelectTimeZone
+        v-model="zone"
+        aria-label="Time zone"
+      />
     </div>
   </div>
 </template>

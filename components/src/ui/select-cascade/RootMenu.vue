@@ -236,7 +236,8 @@ defineExpose({
     ref="wrapper"
     :class="['root-menu', top.theme, { disabled }, size]"
     :style="{ width: minWidth }"
-    tabindex="0"
+    :tabindex="disabled ? -1 : 0"
+    :aria-disabled="disabled || undefined"
     @click.prevent="openMenu"
   >
     <div>
@@ -308,7 +309,6 @@ defineExpose({
 }
 .root-menu:hover > div:first-child {
   cursor: pointer;
-  opacity: 0.75;
 }
 .root-menu.disabled {
   opacity: 0.55;

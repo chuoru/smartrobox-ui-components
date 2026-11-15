@@ -43,7 +43,11 @@ const networks = [
           <td class="tw:px-3 tw:py-1">{{ address }}</td>
           <td
             class="tw:px-3 tw:py-1"
-            :class="ipAddress.isValid(address) ? 'tw:text-green-400' : 'tw:text-red-400'"
+            :class="
+              ipAddress.isValid(address)
+                ? 'tw:text-green-700 tw:dark:text-green-400'
+                : 'tw:text-red-700 tw:dark:text-red-400'
+            "
           >
             {{ ipAddress.isValid(address) }}
           </td>
@@ -73,7 +77,11 @@ const networks = [
             <td class="tw:px-3 tw:py-1">{{ network }}</td>
             <td
               class="tw:px-3 tw:py-1"
-              :class="ipAddress.isInSubnet(host, network) ? 'tw:text-green-400' : 'tw:text-red-400'"
+              :class="
+                ipAddress.isInSubnet(host, network)
+                  ? 'tw:text-green-700 tw:dark:text-green-400'
+                  : 'tw:text-red-700 tw:dark:text-red-400'
+              "
             >
               {{ ipAddress.isInSubnet(host, network) }}
             </td>

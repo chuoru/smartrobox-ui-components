@@ -4,6 +4,10 @@ import { DatePicker } from 'reka-ui/namespaced';
 import type { DateValue } from 'reka-ui';
 
 const model = defineModel<DateValue | null>();
+
+withDefaults(defineProps<{ triggerLabel?: string }>(), {
+  triggerLabel: 'Open calendar',
+});
 </script>
 
 <template>
@@ -33,7 +37,10 @@ const model = defineModel<DateValue | null>();
         </template>
       </div>
 
-      <DatePicker.Trigger class="date-picker-trigger">
+      <DatePicker.Trigger
+        class="date-picker-trigger"
+        :aria-label="triggerLabel"
+      >
         <CalendarIcon class="date-picker-trigger-icon" />
       </DatePicker.Trigger>
     </DatePicker.Field>
@@ -260,7 +267,7 @@ const model = defineModel<DateValue | null>();
           }
           &[data-selected] {
             background-color: var(--sr-color-success);
-            color: white;
+            color: var(--sr-color-success-fg);
           }
           &[data-today] {
             font-weight: bold;

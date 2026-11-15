@@ -30,6 +30,7 @@ const model = defineModel();
       v-model="model"
       :class="[size, { single: !multiple }, { disabled }]"
       :multiple="multiple"
+      :disabled="disabled"
     >
       <option
         v-for="option in options"

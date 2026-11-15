@@ -12,15 +12,15 @@ import {
 import { ToggleGroup } from '@smartrobox/ui';
 
 const items = ref([
-  { value: 'left', icon: Bars3BottomLeftIcon },
-  { value: 'center', icon: Bars3Icon },
-  { value: 'right', icon: Bars3BottomRightIcon },
+  { value: 'left', label: 'Align left', icon: Bars3BottomLeftIcon },
+  { value: 'center', label: 'Align center', icon: Bars3Icon },
+  { value: 'right', label: 'Align right', icon: Bars3BottomRightIcon },
 ]);
 
 const items2 = ref([
-  { value: 'bold', icon: BoldIcon },
-  { value: 'italic', icon: ItalicIcon },
-  { value: 'strikethrough', icon: StrikethroughIcon },
+  { value: 'bold', label: 'Bold', icon: BoldIcon },
+  { value: 'italic', label: 'Italic', icon: ItalicIcon },
+  { value: 'strikethrough', label: 'Strikethrough', icon: StrikethroughIcon },
 ]);
 
 const selected = ref('left');
@@ -36,7 +36,7 @@ const multiSelected = ref([]);
         type="single"
         :items="items"
       />
-      <div class="tw:text-green-600">{{ selected }} ({{ typeof selected }})</div>
+      <div class="tw:text-green-700 tw:dark:text-green-400">{{ selected }} ({{ typeof selected }})</div>
     </div>
 
     <div class="tw:mb-7">
@@ -46,7 +46,7 @@ const multiSelected = ref([]);
         type="multiple"
         :items="items2"
       />
-      <div class="tw:text-green-600">{{ multiSelected }} ({{ typeof multiSelected }})</div>
+      <div class="tw:text-green-700 tw:dark:text-green-400">{{ multiSelected }} ({{ typeof multiSelected }})</div>
     </div>
   </div>
 </template>

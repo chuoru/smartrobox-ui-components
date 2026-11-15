@@ -16,7 +16,7 @@ const value2 = ref('Hello World');
         auto-resize
       />
       <div class="tw:mt-3">
-        <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ const value2 = ref('Hello World');
         size="40"
       />
       <div class="tw:mt-3">
-        <span class="tw:text-green-600">{{ value2 }} ({{ typeof value2 }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ value2 }} ({{ typeof value2 }})</span>
       </div>
     </div>
   </div>

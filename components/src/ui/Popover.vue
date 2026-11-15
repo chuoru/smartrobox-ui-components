@@ -11,6 +11,7 @@ withDefaults(
       align?: PopoverContentProps['align'];
       side?: PopoverContentProps['side'];
       zIndex?: number;
+      triggerLabel?: string;
     }
   >(),
   {
@@ -21,7 +22,7 @@ withDefaults(
 
 <template>
   <Popover.Root v-model:open="model">
-    <Popover.Trigger>
+    <Popover.Trigger :aria-label="triggerLabel">
       <slot name="trigger" />
     </Popover.Trigger>
 
@@ -34,7 +35,10 @@ withDefaults(
         :side="side"
       >
         <slot />
-        <Popover.Close class="popover-close">
+        <Popover.Close
+          class="popover-close"
+          aria-label="Close"
+        >
           <XMarkIcon class="popover-close-icon" />
         </Popover.Close>
         <Popover.Arrow class="popover-arrow" />

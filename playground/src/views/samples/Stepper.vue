@@ -58,7 +58,7 @@ const hasNext = computed(() => stepperRef.value?.hasNext() ?? false);
     </div>
     <div class="tw:mt-4 tw:border-t tw:border-slate-300">
       <span>position: </span>
-      <span class="tw:text-green-400">{{ position }}</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ position }}</span>
     </div>
   </div>
 

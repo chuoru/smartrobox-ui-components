@@ -27,14 +27,14 @@ onMounted(async () => {
     />
   </div>
 
-  <div class="tw:mt-4 tw:flex tw:flex-col tw:text-green-600">
+  <div class="tw:mt-4 tw:flex tw:flex-col tw:text-green-700 tw:dark:text-green-400">
     <div>total: {{ photos.length }}</div>
     <div>page: {{ page }}</div>
   </div>
 
   <div class="tw:mt-4">
     <table class="tw:border tw:border-gray-200">
-      <thead class="tw:bg-amber-50 tw:shadow">
+      <thead class="tw:bg-amber-50 tw:shadow tw:dark:bg-slate-800">
         <tr>
           <th class="tw:px-3">ID</th>
           <th class="tw:px-3">Title</th>

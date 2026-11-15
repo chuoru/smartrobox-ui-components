@@ -8,7 +8,7 @@
 .context-menu-item-suffix {
   left: 1.25rem;
   margin-left: auto;
-  color: var(--sr-gray-400);
+  color: var(--sr-gray-700);
 
   :where([data-disabled]) & {
     color: var(--sr-gray-300);

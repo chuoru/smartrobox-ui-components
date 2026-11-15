@@ -28,7 +28,7 @@ const options = ref([
     :options="options"
   />
   <div class="tw:mt-2">
-    <span class="tw:text-green-600">{{ value }}</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }}</span>
   </div>
 
   <div class="tw:flex tw:gap-4">

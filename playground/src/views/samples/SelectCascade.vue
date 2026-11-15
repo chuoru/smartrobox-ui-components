@@ -50,7 +50,7 @@ const options = ref([
           :options="options"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ selectedTransparent }}</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ selectedTransparent }}</span>
       </div>
 
       <h3 class="tw:my-2">dark transparent</h3>
@@ -62,7 +62,7 @@ const options = ref([
           :options="options"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ selectedTransparent }}</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ selectedTransparent }}</span>
       </div>
 
       <h3 class="tw:mt-2 tw:mb-1">disabled</h3>
@@ -74,7 +74,7 @@ const options = ref([
           :disabled="true"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ selectedTransparent }}</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ selectedTransparent }}</span>
       </div>
     </div>
 
@@ -95,7 +95,7 @@ const options = ref([
         >
           Submit
         </Button>
-        <span class="tw:text-green-600">{{ selected[index] }}</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ selected[index] }}</span>
       </div>
     </div>
 
@@ -109,7 +109,7 @@ const options = ref([
             :downward="false"
           />
         </div>
-        <div class="tw:text-green-600">{{ selectedBottom }}</div>
+        <div class="tw:text-green-700 tw:dark:text-green-400">{{ selectedBottom }}</div>
       </div>
     </div>
   </div>

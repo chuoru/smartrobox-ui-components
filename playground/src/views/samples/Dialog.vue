@@ -21,7 +21,7 @@ const handleApply = () => {
 
 <template>
   <Button @click="open = true">open</Button>
-  <span class="tw:ml-2 tw:text-green-600">{{ open }} ({{ typeof open }})</span>
+  <span class="tw:ml-2 tw:text-green-700 tw:dark:text-green-400">{{ open }} ({{ typeof open }})</span>
   <Dialog
     v-model:open="open"
     :zIndex="101"

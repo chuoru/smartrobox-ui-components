@@ -22,8 +22,9 @@ onBeforeUnmount(() => {
 
 <template>
   <Progress
+    aria-label="Upload progress"
     v-model="value"
     class="tw:w-80"
   />
-  <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+  <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
 </template>

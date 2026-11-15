@@ -21,7 +21,10 @@ import ThemeSwitch from '@/components/layout/ThemeSwitch.vue';
     <div class="tw:overflow-y-auto">
       <AppSidebar />
     </div>
-    <main class="tw:overflow-y-auto tw:p-4">
+    <main
+      class="tw:overflow-y-auto tw:p-4"
+      tabindex="0"
+    >
       <router-view />
     </main>
   </div>

@@ -5,6 +5,7 @@ import type { ToggleGroupRootProps, AcceptableValue } from 'reka-ui';
 
 type Item = {
   value: string;
+  label: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any,@typescript-eslint/no-empty-object-type
   icon: FunctionalComponent<any, {}, any, {}>;
 };
@@ -35,6 +36,7 @@ withDefaults(
       v-for="item in items"
       :key="item.value"
       :value="item.value"
+      :aria-label="item.label"
       class="item"
     >
       <slot
