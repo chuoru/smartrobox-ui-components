@@ -1,0 +1,13 @@
+/samples/date-picker@aria/Open calendar[role="button"]
+/samples/date-range-picker@aria/Open calendar[role="button"]
+/samples/popover@aria/Dimensions[role="button"]
+/samples/popover-native@aria/Open bottom-right popover[role="button"]
+/samples/dialog@aria/open[role="button"]
+/samples/alert-dialog@aria/v-model:open[role="button"]
+/samples/button-with-confirm@aria/Deploy[role="button"]
+/samples/dropdown-menu@aria/open[role="button"]
+/samples/context-menu@context:main span.tw\:block
+/samples/combobox@aria/Show popup
+/samples/select-cascade@main [tabindex="0"]
+/samples/hover-card@hover:img[alt="SmartRobox"]
+/samples/tooltip@hover:main [aria-describedby]
