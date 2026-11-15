@@ -62,7 +62,7 @@ const model = computed({
     width: 1rem;
     height: 1rem;
     border-radius: 9999px;
-    border: 1px solid var(--sr-gray-200);
+    border: 1px solid var(--sr-color-control-border);
     background-color: var(--sr-gray-50);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
@@ -70,7 +70,7 @@ const model = computed({
       background-color: var(--sr-gray-100);
     }
     &:focus-visible {
-      outline: 2px solid var(--sr-primary-400);
+      outline: var(--sr-outline-width) solid var(--sr-outline-color);
     }
   }
 }

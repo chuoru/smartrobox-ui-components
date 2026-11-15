@@ -264,7 +264,7 @@ defineExpose({
   font-weight: 400;
   line-height: 1.5;
   vertical-align: middle;
-  border: 1px solid var(--sr-color-border);
+  border: 1px solid var(--sr-color-control-border);
   border-radius: var(--sr-form-control-border-radius);
   &.xs {
     padding: var(--sr-form-control-py-xs) calc(var(--sr-form-control-font-xs) * 0.75 + 1rem)
@@ -301,8 +301,9 @@ defineExpose({
     padding: 4px 10px;
   }
 }
-.root-menu:focus {
-  outline: 0;
+.root-menu:focus-visible {
+  outline: var(--sr-outline-width) solid var(--sr-outline-color);
+  outline-offset: -1px;
   box-shadow:
     0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);

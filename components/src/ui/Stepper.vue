@@ -108,7 +108,7 @@ defineExpose({
       box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
       cursor: pointer;
       &:focus {
-        box-shadow: 0 0 0 2px #000;
+        box-shadow: 0 0 0 var(--sr-outline-width) var(--sr-outline-color);
         outline: none;
       }
       &:hover {

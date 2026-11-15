@@ -24,13 +24,14 @@ const model = defineModel();
 input {
   color: var(--sr-color-text);
   border-radius: var(--sr-form-control-border-radius);
-  border: 1px solid var(--sr-color-border);
+  border: 1px solid var(--sr-color-control-border);
   background-color: var(--sr-color-bg);
   transition: all 0.15s ease-in-out;
 
   &:focus {
-    outline: none;
-    border-color: var(--sr-primary-500);
+    outline: var(--sr-outline-width) solid var(--sr-outline-color);
+    outline-offset: -1px;
+    border-color: var(--sr-color-control-focus);
     box-shadow: 3px 4px 8px rgb(120 190 65 / 10%);
   }
 

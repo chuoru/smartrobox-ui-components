@@ -34,7 +34,7 @@ withDefaults(
   height: 1.25rem;
   width: 2rem;
   border-radius: 9999px;
-  border: 1px solid var(--sr-color-border);
+  border: 1px solid var(--sr-color-control-border);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   cursor: pointer;
 

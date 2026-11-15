@@ -16,7 +16,7 @@ import { Toggle } from 'reka-ui';
   align-items: center;
   justify-content: center;
   border-radius: 0.125rem;
-  border: 1px solid var(--sr-gray-300);
+  border: 1px solid var(--sr-color-control-border);
   background-color: white;
   font-size: 1rem;
   line-height: 1rem;
@@ -30,10 +30,12 @@ import { Toggle } from 'reka-ui';
     background-color: var(--sr-gray-100);
   }
   &:focus-visible {
-    outline: 2px solid var(--sr-primary-400);
+    outline: var(--sr-outline-width) solid var(--sr-outline-color);
   }
   &[data-state='on'] {
-    background-color: var(--sr-gray-300);
+    color: white;
+    border-color: var(--sr-primary-600);
+    background-color: var(--sr-primary-600);
   }
 }
 </style>

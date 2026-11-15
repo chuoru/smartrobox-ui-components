@@ -57,7 +57,7 @@ label {
   justify-content: center;
   align-items: center;
   border-radius: var(--sr-form-control-border-radius);
-  border: 1px solid var(--sr-gray-300);
+  border: 1px solid var(--sr-color-control-border);
   background-color: white;
 
   &.xs {

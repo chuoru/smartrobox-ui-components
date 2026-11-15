@@ -115,13 +115,13 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
   align-items: center;
   justify-content: space-between;
   border-radius: 0.25rem;
-  border: 1px solid var(--sr-color-border);
+  border: 1px solid var(--sr-color-control-border);
   padding: 0.375rem;
   text-align: center;
   user-select: none;
 
   &[data-invalid] {
-    border-color: var(--sr-primary-500);
+    border-color: var(--sr-danger-500);
   }
 
   .date-picker-segments {
@@ -133,7 +133,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
       padding: 0.125rem;
 
       &:focus-visible {
-        outline: 2px solid var(--sr-primary-400);
+        outline: var(--sr-outline-width) solid var(--sr-outline-color);
       }
     }
   }
@@ -143,7 +143,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
     padding: 0.25rem;
 
     &:focus-visible {
-      outline: 2px solid var(--sr-primary-400);
+      outline: var(--sr-outline-width) solid var(--sr-outline-color);
     }
 
     .date-picker-trigger-icon {
@@ -190,7 +190,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
           /* background-color: var(--sr-gray-100); */
         }
         &:focus-visible {
-          outline: 2px solid var(--sr-primary-400);
+          outline: var(--sr-outline-width) solid var(--sr-outline-color);
         }
 
         .date-picker-nav-icon {

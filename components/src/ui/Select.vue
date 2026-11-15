@@ -77,8 +77,13 @@ select {
   width: 100%;
   cursor: pointer;
   appearance: none;
-  border: 1px solid var(--sr-color-border);
+  border: 1px solid var(--sr-color-control-border);
   border-radius: var(--sr-form-control-border-radius);
+
+  &:focus-visible {
+    outline: var(--sr-outline-width) solid var(--sr-outline-color);
+    outline-offset: -1px;
+  }
 
   &.disabled {
     background-color: var(--sr-color-disabled-form-bg);

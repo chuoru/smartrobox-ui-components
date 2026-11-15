@@ -87,7 +87,7 @@ defineProps<
     justify-content: space-between;
     align-items: center;
     border-radius: var(--sr-form-control-border-radius);
-    border: 1px solid var(--sr-gray-300);
+    border: 1px solid var(--sr-color-control-border);
     background-color: var(--sr-color-bg);
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -97,7 +97,7 @@ defineProps<
     &:hover {
       background-color: var(--sr-color-bg-dlg);
     }
-    &:focus-visible {
+    &:focus-within {
       outline: solid var(--sr-outline-width) var(--sr-outline-color);
     }
 

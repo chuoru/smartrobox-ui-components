@@ -135,7 +135,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
   align-items: center;
   border-radius: 0.25rem;
   color: var(--sr-color-text);
-  border: 1px solid var(--sr-color-border);
+  border: 1px solid var(--sr-color-control-border);
   background-color: var(--sr-color-bg);
   padding: 0.25rem;
   text-align: center;
@@ -148,7 +148,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
     border-radius: 0.25rem;
     padding: 0.125rem;
     &:focus-visible {
-      outline: 2px solid var(--sr-primary-400);
+      outline: var(--sr-outline-width) solid var(--sr-outline-color);
     }
     &[data-placeholder] {
       color: var(--sr-color-placeholder);
@@ -168,7 +168,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #000;
+    box-shadow: 0 0 0 var(--sr-outline-width) var(--sr-outline-color);
   }
 }
 
@@ -206,7 +206,7 @@ withDefaults(defineProps<{ triggerLabel?: string }>(), {
           opacity: 0.45;
         }
         &:focus-visible {
-          outline: 2px solid var(--sr-primary-400);
+          outline: var(--sr-outline-width) solid var(--sr-outline-color);
         }
         .date-range-picker-nav-icon {
           width: 1rem;

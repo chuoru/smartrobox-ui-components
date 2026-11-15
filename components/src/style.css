@@ -48,7 +48,7 @@
   --sr-font-size-base: 0.875rem;
 
   --sr-outline-width: 2px;
-  --sr-outline-color: var(--sr-primary-400);
+  --sr-outline-color: var(--sr-color-control-focus);
 
   --sr-form-control-px-2xs: 0.375rem;
   --sr-form-control-py-2xs: 0.125rem;
@@ -123,8 +123,10 @@
 
   --sr-color-control-checked: var(--sr-primary-600);
   --sr-color-control-checked-fg: white;
+  --sr-color-control-border: #8392a3;
+  --sr-color-control-focus: var(--sr-color-control-checked);
   --sr-color-switch-thumb: white;
-  --sr-color-unchecked-switch-bg: var(--sr-gray-400);
+  --sr-color-unchecked-switch-bg: var(--sr-color-control-border);
   --sr-color-placeholder: var(--sr-color-text-light);
   --sr-color-disabled-form-bg: var(--sr-gray-200);
 
@@ -161,7 +163,10 @@
     --sr-cmbbx-label-color: var(--sr-primary-400);
     --sr-color-control-checked: var(--sr-primary-500);
     --sr-color-control-checked-fg: var(--sr-gray-950);
-    --sr-color-unchecked-switch-bg: var(--sr-gray-600);
+    --sr-color-control-border: #7a849c;
+    --sr-color-control-focus: var(--sr-color-control-checked);
+    --sr-outline-color: var(--sr-color-control-focus);
+    --sr-color-unchecked-switch-bg: var(--sr-color-control-border);
     --sr-color-disabled-form-bg: var(--sr-gray-800);
 
     --sr-color-bg-tooltip: rgb(82 95 127 / 85%);

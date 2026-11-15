@@ -62,7 +62,7 @@ withDefaults(
     width: 1.75rem;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--sr-gray-300);
+    border: 1px solid var(--sr-color-control-border);
     background-color: white;
     font-size: 1rem;
     line-height: 1rem;
@@ -83,10 +83,12 @@ withDefaults(
       z-index: 10;
     }
     &:focus-visible {
-      outline: 2px solid var(--sr-primary-400);
+      outline: var(--sr-outline-width) solid var(--sr-outline-color);
     }
     &[data-state='on'] {
-      background-color: var(--sr-gray-300);
+      color: white;
+      border-color: var(--sr-primary-600);
+      background-color: var(--sr-primary-600);
     }
 
     .icon {
