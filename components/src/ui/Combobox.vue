@@ -88,14 +88,14 @@ defineProps<
     align-items: center;
     border-radius: var(--sr-form-control-border-radius);
     border: 1px solid var(--sr-gray-300);
-    background-color: white;
+    background-color: var(--sr-color-bg);
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     font-size: 0.875rem;
     line-height: calc(1.25 / 0.875);
 
     &:hover {
-      background-color: var(--sr-gray-50);
+      background-color: var(--sr-color-bg-dlg);
     }
     &:focus-visible {
       outline: solid var(--sr-outline-width) var(--sr-outline-color);
@@ -112,7 +112,7 @@ defineProps<
     .chevron-down-icon {
       width: 16px;
       height: 16px;
-      color: var(--sr-gray-400);
+      color: var(--sr-color-text-light);
     }
   }
   .content {
@@ -124,7 +124,7 @@ defineProps<
     overflow: hidden;
     border-radius: var(--sr-form-control-border-radius);
     border: 1px solid var(--sr-gray-300);
-    background-color: white;
+    background-color: var(--sr-color-bg-dlg);
   }
   .viewport {
     padding: 0.3125rem;
@@ -134,7 +134,7 @@ defineProps<
       padding-bottom: 0.5rem;
       text-align: center;
       min-width: 10rem;
-      color: var(--sr-gray-400);
+      color: var(--sr-color-text-light);
     }
     .group {
       .separator {
@@ -163,7 +163,7 @@ defineProps<
         line-height: 1;
         user-select: none;
         &:hover {
-          background-color: var(--sr-gray-200);
+          background-color: var(--sr-color-border);
         }
         .item-indicator {
           position: absolute;

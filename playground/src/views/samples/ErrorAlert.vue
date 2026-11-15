@@ -13,6 +13,7 @@ const errors = ['IP address is invalid.', 'Port must be between 1 and 65535.'];
     <div>
       <Input
         v-model="ip"
+        aria-label="IP address"
         class="tw:w-full"
       />
       <ErrorAlert

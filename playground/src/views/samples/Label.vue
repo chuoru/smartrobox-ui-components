@@ -13,7 +13,7 @@ const value = ref<string>('George');
       id="firstName"
       type="text"
     />
-    <span class="tw:text-green-600">{{ value }}</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }}</span>
   </div>
   <hr class="tw:my-4 tw:border tw:border-gray-300" />
   <div

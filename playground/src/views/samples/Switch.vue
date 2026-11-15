@@ -20,7 +20,7 @@ const state3 = ref(false);
     >
       Admin
     </label>
-    <span class="tw:text-green-600">{{ state }} ({{ typeof state }})</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ state }} ({{ typeof state }})</span>
   </div>
 
   <div class="tw:mt-4 tw:flex tw:items-center tw:gap-2">
@@ -36,7 +36,7 @@ const state3 = ref(false);
     >
       sm
     </label>
-    <span class="tw:text-green-600">{{ state2 }} ({{ typeof state3 }})</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ state2 }} ({{ typeof state3 }})</span>
   </div>
 
   <div class="tw:mt-4 tw:flex tw:items-center tw:gap-2">
@@ -52,6 +52,6 @@ const state3 = ref(false);
     >
       xs
     </label>
-    <span class="tw:text-green-600">{{ state3 }} ({{ typeof state3 }})</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ state3 }} ({{ typeof state3 }})</span>
   </div>
 </template>

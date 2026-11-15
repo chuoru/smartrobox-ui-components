@@ -22,7 +22,7 @@ const { fireSuccess } = useSweetAlert();
         size="2xs"
         aria-label="Delete"
       >
-        <TrashIcon class="tw:size-5 tw:text-red-400" />
+        <TrashIcon class="tw:size-5 tw:text-red-700 tw:dark:text-red-400" />
       </Button>
     </AlertDialog>
   </div>

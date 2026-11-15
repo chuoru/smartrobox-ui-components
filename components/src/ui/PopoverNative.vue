@@ -12,6 +12,7 @@ const props = withDefaults(
     marginLeft?: number | string;
     marginBottom?: number | string;
     marginRight?: number | string;
+    triggerLabel?: string;
   }>(),
   {
     placement: 'bottom-left',
@@ -56,6 +57,7 @@ const handleEventToggle = (evt: ToggleEvent) => {
     <button
       :commandfor="popoverId"
       command="toggle-popover"
+      :aria-label="triggerLabel"
       :style="{ anchorName: anchorNameVar }"
     >
       <slot name="trigger" />

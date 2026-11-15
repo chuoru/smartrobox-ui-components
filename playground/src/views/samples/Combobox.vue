@@ -34,7 +34,7 @@ const value = ref<string>();
 </script>
 
 <template>
-  <div class="tw:text-green-600">{{ value }} ({{ typeof value }})</div>
+  <div class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</div>
   <div class="tw:mt-2 tw:flex">
     <Combobox
       v-model="value"

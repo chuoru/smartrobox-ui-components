@@ -6,7 +6,7 @@ import { OneClickCopy } from '@smartrobox/ui';
   <div class="tw:m-4">
     <OneClickCopy class="tw:outine-red-300">
       <a
-        class="tw:text-blue-400 tw:underline tw:hover:opacity-65"
+        class="tw:text-blue-700 tw:underline tw:hover:opacity-65 tw:dark:text-blue-400"
         href="https://reka-ui.com/"
         >Reka UI</a
       >

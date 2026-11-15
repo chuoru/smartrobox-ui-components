@@ -14,32 +14,35 @@ const values = ref<string[]>(new Array(sizes.length));
     <div class="tw:flex tw:flex-col tw:gap-4">
       <div class="tw:flex tw:items-center tw:gap-2">
         <Input
+          aria-label="Text"
           name="test"
           v-model="value"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
       </div>
 
       <div class="tw:flex tw:items-center tw:gap-2">
         <Input
+          aria-label="Text (disabled)"
           name="test"
           v-model="value"
           :disabled="true"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
       </div>
 
       <div class="tw:flex tw:items-center tw:gap-2">
         <Input
+          aria-label="Number"
           name="test"
           type="number"
           class="tw:w-28"
           v-model.number="numberValue"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ numberValue }} ({{ typeof numberValue }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ numberValue }} ({{ typeof numberValue }})</span>
       </div>
     </div>
   </div>
@@ -52,6 +55,7 @@ const values = ref<string[]>(new Array(sizes.length));
     >
       <div class="tw:flex tw:items-center tw:gap-2">
         <Input
+          :aria-label="`Text (${size})`"
           v-model="values[index]"
           name="test"
           :size="size"
@@ -62,7 +66,7 @@ const values = ref<string[]>(new Array(sizes.length));
         >
           Submit
         </Button>
-        <span class="tw:text-green-600">{{ values[index] }}</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ values[index] }}</span>
       </div>
     </div>
   </div>

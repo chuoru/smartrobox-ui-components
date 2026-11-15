@@ -6,10 +6,11 @@ const value = ref(false);
 </script>
 
 <template>
-  <div class="tw:mb-4 tw:text-green-600">{{ value }} ({{ typeof value }})</div>
+  <div class="tw:mb-4 tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</div>
   <HoverCard v-model:open="value">
     <template #trigger>
       <img
+        alt="SmartRobox"
         class="tw:block tw:h-11.25 tw:w-11.25 tw:rounded-full tw:border-slate-500 tw:dark:border"
         src="/smartrobox-logo.svg"
       />
@@ -17,9 +18,9 @@ const value = ref(false);
 
     <div class="tw:flex tw:flex-col tw:gap-1.75">
       <img
+        alt="SmartRobox"
         class="tw:block tw:h-15 tw:w-15 tw:rounded-full"
         src="/smartrobox-logo.svg"
-        alt="Unovue"
       />
       <div class="tw:flex tw:flex-col tw:gap-3.75">
         <div>

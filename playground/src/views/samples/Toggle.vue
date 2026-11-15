@@ -7,7 +7,10 @@ const state = ref(false);
 </script>
 
 <template>
-  <Toggle v-model="state">
+  <Toggle
+    v-model="state"
+    aria-label="Italic"
+  >
     <ItalicIcon class="tw:size-4" />
   </Toggle>
 </template>

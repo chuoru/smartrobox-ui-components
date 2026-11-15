@@ -104,8 +104,9 @@
   --sr-cmbbx-label-color: var(--sr-primary-700);
   --sr-color-text: var(--sr-gray-700);
   --sr-color-heading: var(--sr-gray-800);
-  --sr-color-text-light: #6a7785;
-  --sr-color-success: #1d8659;
+  --sr-color-text-light: #677481;
+  --sr-color-success: #1c8256;
+  --sr-color-success-fg: white;
   --sr-color-text-pagination-selected: white;
 
   --sr-color-link: var(--sr-primary-700);
@@ -124,7 +125,7 @@
   --sr-color-control-checked-fg: white;
   --sr-color-switch-thumb: white;
   --sr-color-unchecked-switch-bg: var(--sr-gray-400);
-  --sr-color-placeholder: var(--sr-gray-500);
+  --sr-color-placeholder: var(--sr-color-text-light);
   --sr-color-disabled-form-bg: var(--sr-gray-200);
 
   --sr-form-control-border-radius: 0.25rem;
@@ -139,6 +140,7 @@
     --sr-color-text: var(--sr-gray-300);
     --sr-color-heading: var(--sr-gray-100);
     --sr-color-text-light: var(--sr-gray-500);
+    --sr-color-placeholder: var(--sr-color-text-light);
     --sr-color-link: var(--sr-primary-300);
     --sr-color-bg: var(--sr-gray-950);
     --sr-color-bg-dlg: var(--sr-navy-500);
@@ -155,6 +157,8 @@
 
     --sr-color-switch-thumb: var(--sr-gray-100);
     --sr-color-success: var(--sr-success-500);
+    --sr-color-success-fg: var(--sr-gray-950);
+    --sr-cmbbx-label-color: var(--sr-primary-400);
     --sr-color-control-checked: var(--sr-primary-500);
     --sr-color-control-checked-fg: var(--sr-gray-950);
     --sr-color-unchecked-switch-bg: var(--sr-gray-600);

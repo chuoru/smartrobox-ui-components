@@ -12,7 +12,10 @@ const timezone = ref(resolvedTimeZone);
 
 <template>
   <div>
-    <SelectTimeZone v-model="timezone" />
-    <span class="tw:ml-4 tw:text-green-600">{{ timezone }} ({{ browserTimeZoneOffset }})</span>
+    <SelectTimeZone
+      v-model="timezone"
+      aria-label="Time zone"
+    />
+    <span class="tw:ml-4 tw:text-green-700 tw:dark:text-green-400">{{ timezone }} ({{ browserTimeZoneOffset }})</span>
   </div>
 </template>

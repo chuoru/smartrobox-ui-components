@@ -14,7 +14,7 @@ const handleSelect = () => alert('hello!');
 <template>
   <div class="tw:relative">
     <DropdownMenu.Root v-model:open="toggleState">
-      <DropdownMenu.Trigger>
+      <DropdownMenu.Trigger as-child>
         <Button>open</Button>
       </DropdownMenu.Trigger>
 

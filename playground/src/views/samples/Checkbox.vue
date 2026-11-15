@@ -15,7 +15,7 @@ const checked3 = ref<string[]>([]);
     />
     <div class="tw:flex tw:items-center tw:gap-4">
       <span class="tw:select-none">true / false</span>
-      <span class="tw:text-green-600">{{ checked1 }}</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ checked1 }}</span>
     </div>
 
     <Checkbox
@@ -25,7 +25,7 @@ const checked3 = ref<string[]>([]);
     />
     <div class="tw:flex tw:items-center tw:gap-4">
       <span class="tw:select-none">true / false</span>
-      <span class="tw:text-green-600">{{ checked1 }}</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ checked1 }}</span>
     </div>
 
     <Checkbox
@@ -35,7 +35,7 @@ const checked3 = ref<string[]>([]);
     />
     <div class="tw:flex tw:items-center tw:gap-4">
       <span class="tw:select-none">true / false</span>
-      <span class="tw:text-green-600">{{ checked1 }}</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ checked1 }}</span>
     </div>
 
     <hr class="tw:my-4 tw:border-slate-200" />
@@ -53,7 +53,7 @@ const checked3 = ref<string[]>([]);
       >
         Toggle Indeterminate
       </Button>
-      <span class="tw:text-green-600">{{ checked2 }}</span>
+      <span class="tw:text-green-700 tw:dark:text-green-400">{{ checked2 }}</span>
     </div>
 
     <hr class="tw:my-4 tw:border-slate-200" />
@@ -71,6 +71,6 @@ const checked3 = ref<string[]>([]);
         <span class="tw:select-none">{{ value }}</span>
       </label>
     </CheckboxGroup>
-    <span class="tw:text-green-600">{{ checked3 }}</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ checked3 }}</span>
   </div>
 </template>

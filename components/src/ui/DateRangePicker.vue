@@ -4,6 +4,10 @@ import { DateRangePicker } from 'reka-ui/namespaced';
 import type { DateRange } from 'reka-ui';
 
 const model = defineModel<DateRange | null>();
+
+withDefaults(defineProps<{ triggerLabel?: string }>(), {
+  triggerLabel: 'Open calendar',
+});
 </script>
 
 <template>
@@ -54,7 +58,10 @@ const model = defineModel<DateRange | null>();
         </DateRangePicker.Input>
       </template>
 
-      <DateRangePicker.Trigger class="date-range-picker-trigger">
+      <DateRangePicker.Trigger
+        class="date-range-picker-trigger"
+        :aria-label="triggerLabel"
+      >
         <CalendarIcon class="date-picker-trigger-icon" />
       </DateRangePicker.Trigger>
     </DateRangePicker.Field>

@@ -32,7 +32,11 @@ const addresses = ref([
           <td class="tw:px-3 tw:py-1">{{ address }}</td>
           <td
             class="tw:px-3 tw:py-1"
-            :class="macAddress.isValid(address) ? 'tw:text-green-400' : 'tw:text-red-400'"
+            :class="
+              macAddress.isValid(address)
+                ? 'tw:text-green-700 tw:dark:text-green-400'
+                : 'tw:text-red-700 tw:dark:text-red-400'
+            "
           >
             {{ macAddress.isValid(address) }}
           </td>

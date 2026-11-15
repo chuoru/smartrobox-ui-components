@@ -27,6 +27,7 @@ const model = defineModel();
       v-bind="{ ...$attrs, class: undefined, style: undefined }"
       v-model="model"
       :class="[size, { disabled }]"
+      :disabled="disabled"
     >
       <template
         v-for="[index, option] in options.entries()"

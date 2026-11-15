@@ -172,6 +172,7 @@ defineExpose<MenuExposed>({
   border: 1px solid var(--sr-color-border);
   padding: 4px 0;
   &.theme-transparent {
+    color: var(--sr-gray-800);
     background-color: oklch(96.7% 0.003 264.542 / 0.85);
   }
   &.theme-dark-transparent {

@@ -28,6 +28,7 @@ const side = ref<Side>('left');
 <template>
   <div class="tw:mt-4 tw:flex tw:items-center">
     <Popover
+      trigger-label="Dimensions"
       v-model:open="open"
       :align="align"
       :side="side"
@@ -43,61 +44,62 @@ const side = ref<Side>('left');
         <p class="tw:mb-2 tw:font-semibold">Dimensions</p>
         <fieldset class="tw:flex tw:items-center tw:gap-3">
           <Label
-            for="width"
+            for="width-1"
             class="tw:w-18 tw:text-right"
             >Width</Label
           >
           <Input
-            id="width"
+            id="width-1"
             size="sm"
             class="tw:w-full"
           />
         </fieldset>
         <fieldset class="tw:flex tw:items-center tw:gap-3">
           <Label
-            for="height"
+            for="height-1"
             class="tw:w-18 tw:text-right"
             >Height</Label
           >
           <Input
-            id="heigth"
+            id="height-1"
             size="sm"
             class="tw:w-full"
           />
         </fieldset>
         <fieldset class="tw:flex tw:items-center tw:gap-3">
           <Label
-            for="width"
+            for="width-2"
             class="tw:w-18 tw:text-right"
             >Width</Label
           >
           <Input
-            id="width"
+            id="width-2"
             size="sm"
             class="tw:w-full"
           />
         </fieldset>
         <fieldset class="tw:flex tw:items-center tw:gap-3">
           <Label
-            for="height"
+            for="height-2"
             class="tw:w-18 tw:text-right"
             >Height</Label
           >
           <Input
-            id="heigth"
+            id="height-2"
             size="sm"
             class="tw:w-full"
           />
         </fieldset>
       </div>
     </Popover>
-    <span class="tw:ml-4 tw:text-green-600">{{ open }} ({{ typeof open }})</span>
+    <span class="tw:ml-4 tw:text-green-700 tw:dark:text-green-400">{{ open }} ({{ typeof open }})</span>
   </div>
 
   <div class="tw:mt-4 tw:flex tw:gap-4">
     <div>
       align:
       <Select
+        aria-label="Align"
         v-model="align"
         :options="ALIGN_OPTIONS"
       />
@@ -105,6 +107,7 @@ const side = ref<Side>('left');
     <div>
       side:
       <Select
+        aria-label="Side"
         v-model="side"
         :options="SIDE_OPTIONS"
       />

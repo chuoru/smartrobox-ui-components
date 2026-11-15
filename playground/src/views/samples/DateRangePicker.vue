@@ -15,7 +15,7 @@ const dateRange2 = ref<DateRange>();
       id="date-range-ja"
       locale="ja"
     />
-    <span class="tw:text-green-600">{{ dateRange }}</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ dateRange }}</span>
   </div>
 
   <div class="tw:mt-4 tw:flex tw:w-68 tw:flex-col tw:gap-1">
@@ -25,6 +25,6 @@ const dateRange2 = ref<DateRange>();
       id="date-range-en"
       locale="en"
     />
-    <span class="tw:text-green-600">{{ dateRange2 }}</span>
+    <span class="tw:text-green-700 tw:dark:text-green-400">{{ dateRange2 }}</span>
   </div>
 </template>

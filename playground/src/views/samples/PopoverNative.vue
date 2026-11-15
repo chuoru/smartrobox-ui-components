@@ -64,10 +64,11 @@ const handleToggle = (index: number, event: ToggleEvent) => {
       class="tw:absolute"
     >
       <div>
-        <div class="tw:mb-2 tw:text-green-600">{{ isOpen[index] }}</div>
+        <div class="tw:mb-2 tw:text-green-700 tw:dark:text-green-400">{{ isOpen[index] }}</div>
       </div>
 
       <PopoverNative
+        :trigger-label="`Open ${elem.placement} popover`"
         :placement="elem.placement"
         :margin-top="elem.marginTop ?? 0"
         :margin-right="elem.marginRight ?? 0"

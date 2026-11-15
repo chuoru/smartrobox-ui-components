@@ -29,7 +29,7 @@ defineProps<{
   margin-top: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 0.875rem;
-  color: var(--sr-danger-500);
+  color: var(--sr-danger-600);
   background-color: var(--sr-danger-50);
   border: 1px solid var(--sr-danger-500);
   border-radius: var(--sr-form-control-border-radius);

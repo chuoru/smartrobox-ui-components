@@ -22,33 +22,36 @@ const multiValues = ref<string[]>([]);
     <div class="tw:flex tw:flex-col tw:gap-4">
       <div class="tw:flex tw:items-center tw:gap-2">
         <Select
+          aria-label="Fruit"
           name="test"
           v-model="value"
           :options="options"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
       </div>
 
       <div class="tw:flex tw:items-center tw:gap-2">
         <Select
+          aria-label="Fruit"
           name="test"
           v-model="value"
           :options="options"
           :disabled="true"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ value }} ({{ typeof value }})</span>
       </div>
 
-      <div class="tw:flex tw:items-center tw:gap-2 tw:bg-gray-900 tw:py-3 tw:text-gray-100 tw:opacity-85">
+      <div class="tw:flex tw:items-center tw:gap-2 tw:bg-gray-900 tw:py-3 tw:text-gray-100">
         <Select
+          aria-label="Fruit"
           name="test"
           v-model="value"
           :options="options"
         />
         <Button variant="primary">Submit</Button>
-        <span class="tw:text-green-600">{{ value }} ({{ typeof value }})</span>
+        <span class="tw:text-green-400">{{ value }} ({{ typeof value }})</span>
       </div>
     </div>
   </div>
@@ -61,6 +64,7 @@ const multiValues = ref<string[]>([]);
     >
       <div class="tw:flex tw:items-center tw:gap-2">
         <Select
+          aria-label="Fruit"
           name="test"
           v-model="values[index]"
           :options="options"
@@ -72,13 +76,14 @@ const multiValues = ref<string[]>([]);
         >
           Submit
         </Button>
-        <span class="tw:text-green-600">{{ values[index] }}</span>
+        <span class="tw:text-green-700 tw:dark:text-green-400">{{ values[index] }}</span>
       </div>
     </div>
 
     <div>
       <div class="tw:flex tw:items-center tw:gap-2">
         <Select
+          aria-label="Fruit"
           name="test"
           v-model="multiValues"
           :options="options"

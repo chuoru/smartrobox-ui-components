@@ -1,10 +1,10 @@
 import {
-  ContextMenuRoot as Root,
   ContextMenuTrigger as Trigger,
   ContextMenuPortal as Portal,
   ContextMenuSub as Sub,
   ContextMenuRadioGroup as RadioGroup,
 } from 'reka-ui';
+import Root from './Root.vue';
 import Content from './Content.vue';
 import Item from './Item.vue';
 import ItemSuffix from './ItemSuffix.vue';
