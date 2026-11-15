@@ -1,6 +1,6 @@
 import { ref, watch } from 'vue';
 import { Tabs } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type TabsArgs = InstanceType<typeof Tabs>['$props'];
 type Story = StoryObj<TabsArgs>;

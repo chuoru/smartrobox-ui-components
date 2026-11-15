@@ -1,8 +1,8 @@
 import { INITIAL_VIEWPORTS } from 'storybook/viewport';
-import type { Preview, Decorator } from '@storybook/vue3';
+import type { Preview, Decorator } from '@storybook/vue3-vite';
 import '../src/style.css';
 
-const applyBackgroundClass: Decorator = (story, _context) => {
+const applyBackgroundClass: Decorator = (story) => {
   if (document.body.classList.contains('dark')) {
     document.body.classList.add('light');
     document.body.classList.remove('dark');
@@ -28,7 +28,7 @@ const preview: Preview = {
         dark: {
           name: 'dark',
           value: 'oklch(12.9% 0.042 264.695)',
-        }
+        },
       },
     },
   },

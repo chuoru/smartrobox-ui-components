@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue';
 import { HomeIcon, ArchiveBoxIcon, CheckIcon } from '@heroicons/vue/24/outline';
 import { Stepper } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type StepperArgs = InstanceType<typeof Stepper>['$props'];
 type Story = StoryObj<StepperArgs>;

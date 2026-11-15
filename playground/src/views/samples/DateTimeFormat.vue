@@ -42,7 +42,5 @@ const locales = ['ja', 'en'];
     </table>
   </div>
 
-  <div>
-
-  </div>
+  <div></div>
 </template>

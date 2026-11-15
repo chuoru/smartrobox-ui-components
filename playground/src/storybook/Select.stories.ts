@@ -1,6 +1,6 @@
 import { ref, watch } from 'vue';
 import { Select } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type SelectArgs = InstanceType<typeof Select>['$props'] & { disabled?: boolean };
 type Story = StoryObj<SelectArgs>;

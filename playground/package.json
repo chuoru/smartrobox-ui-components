@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port 8085",
     "build": "vue-tsc -b && vite build",
+    "lint": "eslint . --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev --port 6006",
     "test-storybook": "test-storybook"

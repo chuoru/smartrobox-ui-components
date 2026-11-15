@@ -1,5 +1,5 @@
 import { Button } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type ButtonArgs = InstanceType<typeof Button>['$props'] & { disabled?: boolean; onClick?: () => void };
 type Story = StoryObj<ButtonArgs>;

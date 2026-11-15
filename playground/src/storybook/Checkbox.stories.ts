@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue';
 import { expect, userEvent, within } from 'storybook/test';
 import { Checkbox } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type CheckboxArgs = InstanceType<typeof Checkbox>['$props'];
 type Story = StoryObj<CheckboxArgs>;

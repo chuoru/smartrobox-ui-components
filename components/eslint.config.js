@@ -40,6 +40,7 @@ const customRules = {
 };
 
 export default defineConfigWithVueTs(
+  { name: 'ignores', ignores: ['dist/**'] },
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
   parserOptionsConfig,

@@ -1,5 +1,5 @@
 import { Label } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type LabelArgs = InstanceType<typeof Label>['$props'] & { default?: string };
 type Story = StoryObj<LabelArgs>;

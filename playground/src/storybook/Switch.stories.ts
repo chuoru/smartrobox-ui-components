@@ -1,5 +1,5 @@
 import { Switch } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type SwitchArgs = InstanceType<typeof Switch>['$props'];
 type Story = StoryObj<SwitchArgs>;

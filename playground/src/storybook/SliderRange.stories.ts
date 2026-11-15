@@ -1,5 +1,5 @@
 import { SliderRange } from '@smartrobox/ui';
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 
 type Story = StoryObj;
 

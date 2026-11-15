@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "npm run build -w components",
+    "lint": "npm run lint --workspaces",
     "dev": "npm run dev -w playground",
     "storybook": "npm run storybook -w playground",
     "test-storybook": "npm run test-storybook -w playground",

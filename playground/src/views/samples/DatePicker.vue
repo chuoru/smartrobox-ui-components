@@ -9,7 +9,7 @@ const zone = ref('Asia/Tokyo');
 </script>
 
 <template>
-  <div class="tw:flex tw:flex-col tw:gap-1 tw:w-40">
+  <div class="tw:flex tw:w-40 tw:flex-col tw:gap-1">
     <Label
       for="date"
       class="tw:text-green-600"
@@ -17,7 +17,7 @@ const zone = ref('Asia/Tokyo');
       {{ date }}
     </Label>
 
-    <div class="tw:flex tw:gap-4 tw:w-120">
+    <div class="tw:flex tw:w-120 tw:gap-4">
       <div class="tw:w-38">
         <DatePicker
           v-model="date"
